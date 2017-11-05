@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+    
+    <div class="container top">
+        <div class="row">
+            <div class="col-md-4 white-bg">
+                <h1><span class="fontCapitalize"><%=user.firstName + " " + user.lastName %></span></h1>
+                <% if (!user.avatar) { %>
+                    <h1 style="font-size: 12em" class="icon-torso"></h1>
+                <% } else { %>
+                    <img class="rounded img-fluid" src="<%= user.avatar %>" alt="user profile image">
+                <% } %>
+            </div>
+            <div class="col-md-8">
+               <h4>Campgrounds posted by <span class="fontCapitalize"><%= user.username %></span></h4>
+                    <% if(campgrounds.length < 1) { %>
+                        <h6 class="mt-4 ml-2"><em>No campgrounds submitted yet...</em></h6> 
+                    <% } else { %>
+                    <div class="row">
+                        <% campgrounds.forEach( campground => { %>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="img-thumbnail gallery">
+                                <img class="img-fluid" src="<%= campground.image %>">
+                                <div class="caption" style="text-align: center">
+                                    <a class="textCenter" href="../campgrounds/<%= campground.id %>"><%= campground.name %></a>
+                                </div>
+                            </div>
+                        </div>
+                     <% }); %>
+                <% } %>
+            </div>
+        </div>
+
+<% include ../partials/footer %>

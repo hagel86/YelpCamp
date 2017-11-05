@@ -1,0 +1,187 @@
+body {
+    background: #FFFFFF;
+    margin: 0;
+    padding: 35px 0 0 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.top {
+    padding-top: 20px !important;
+}
+
+.flash {
+    margin: 20px auto 0 auto !important;
+}
+
+.alert {
+    margin-bottom: 0 !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+}
+
+.jumbotron{
+    background: url("../img/background/3.jpg");
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: 70%;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron div {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    padding: 35px 10px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white !important;
+}
+
+.font500 {
+    font-weight: 500;
+}
+
+.container {
+    margin: 20px auto;
+}
+
+.icon-tent, .icon-torso {
+    position: relative;
+    top: 3px;
+}
+
+.fontCapitalize {
+    text-transform: capitalize;
+    line-height: 1.3em;
+    max-width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.row.text-center {
+    margin-top: 5%;
+}
+
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+    padding: 8px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white !important;
+}
+
+.img-fluid img {
+    width: 100vw;
+    max-height: 170px;
+    z-index: -1;
+}
+
+.img-thumbnail img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img-thumbnail{
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+                0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.img-fluid {
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.delete-form {
+    display: inline;
+}
+
+/*RIBBON SETUP*/
+#ribbon-wrapper {
+    top: 6%;
+    right: 0;
+	position:absolute;
+	color:#fff;
+	background:#E39919;
+	width: 50%;
+	float:right;
+	clear:both;
+	padding: 9px 12px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+	margin-right: -10px;
+}
+
+#ribbon-wrapper-gimmick{
+    width: 0px;
+    height: 0px;
+    float: right;
+
+}
+#ribbon-wrapper:before {
+	content:" ";
+	border-width: 10px 10px 0px 0px;
+    border-style: solid;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: #000000;
+	display:block;
+	width:10px;
+	height:10px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin-bottom:-10px;
+	z-index:-1;
+}
+
+/* Google Maps */
+#map {
+    border-radius: 8px;
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+                0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 760px) {
+    /*Hide Google Maps on Mobile*/
+    #map {
+        display: none;
+    }
+    /*Make username and password fields scale on mobile*/
+    .usernamePasswordForm, .resetPasswordForm {
+        width: 90% !important;
+    }
+    /*Scale jumbotron on Mobile*/
+    .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+    
+    .img-fluid img {
+        max-height: inherit !important;
+    }
+    
+}

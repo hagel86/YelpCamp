@@ -1,0 +1,46 @@
+<% include partials/header %>
+
+<div class="container top">
+    <div class="row">
+        <div class="col">
+            <h1 style="text-align: center">Sign Up</h1>
+            <div class="usernamePasswordForm" style="width: 30%; margin: 25px auto;">
+                <form action="/register" method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input class="form-control" id="username" type="text" name="username" placeholder="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" id="password" type="password" name="password" placeholder="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input class="form-control" id="firstName" type="text" name="firstName" placeholder="Severus" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input class="form-control" id="lastName" type="text" name="lastName" placeholder="Snape" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" placeholder="Severus.Snape@hogwarts.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Profile Picture</label>
+                        <input class="form-control" id="profilePicture" type="text" name="profilePicture" placeholder="http://hogwarts.com/severus.jpg">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminCode">Admin Code</label>
+                        <input class="form-control" id="adminCode" type="text" name="adminCode" placeholder="Are you really an Admin?">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+                    </div>
+                </form>
+                <a class="font500" href="/campgrounds">Go Back</a>
+            </div>
+        </div>
+    </div>
+
+<% include partials/footer %>
