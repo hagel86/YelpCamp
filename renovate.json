@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "bumpVersion": "patch",
+  "reviewers": ["hagel86"],
+  "commitMessagePrefix": "[Security]: ",
+  "dependencyDashboard": "true"
+}
