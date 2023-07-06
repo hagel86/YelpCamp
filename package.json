@@ -1,6 +1,6 @@
 {
   "name": "yelpcamp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "express": "^4.15.5",
     "express-session": "^1.15.6",
     "geocoder": "^0.2.3",
-    "method-override": "^2.3.10",
+    "method-override": "^3.0.0",
     "moment": "^2.19.1",
     "mongoose": "^4.11.14",
     "nodemailer": "^6.0.0",
